@@ -1,0 +1,119 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.8;
+    background-color: whitesmoke;
+}
+
+#main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    background-color:white;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 5px solid snow;
+}
+
+#title {
+    font-family: serif;
+    font-size: 3rem;
+}
+
+#img-div {
+    margin-top: 25px;
+}
+
+#image {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+#img-div figcaption {
+    margin-top: 12px;
+    font-style: italic;
+    color: gray;
+    font-size: 0.95rem;
+}
+
+#biography {
+    background-color: white;
+    padding: 50px 40px;
+}
+
+#biography h3, #headline, #quote-section h3 {
+    font-family: serif;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 25px;
+    color: black;
+}
+
+#biography p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+#tribute-info {
+    background-color: white;
+    padding: 50px 40px;
+}
+
+#tribute-info ul {
+    max-width: 600px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+#tribute-info li {
+    background: white;
+    margin: 15px 0;
+    padding: 15px 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+#tribute-info li:hover {
+    transform: translateX(5px);
+}
+
+/* Distinct Quote Block */
+#quote-section {
+    padding: 60px 30px;
+    text-align: center;
+    background-color: white;
+}
+
+#quote-section p {
+    font-size: 1.6rem;
+    display: inline-block;
+    padding-left: 20px;
+    max-width: 700px;
+    background-color: white;
+}
+@media (max-width: 768px) {
+    #title {
+        font-size: 2.2rem;
+    }
+    #biography, #tribute-info {
+        padding: 30px 20px;
+    }
+    #quote-section p {
+        font-size: 1.2rem;
+    }
+}

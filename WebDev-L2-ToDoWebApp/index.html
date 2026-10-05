@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>MY TO-DO LIST</h1>
+    </header>
+
+    <section id="input-section">
+        <input type="text" placeholder="enter task" id="taskinput">
+        <button id="add-button">Add Task</button>
+    </section>
+
+    <section id="list-section">
+        <div class="pending">
+            <h3 id="pendingcount">0 pending</h3>
+            <ul id="pendingList"></ul>
+            <p id="empty-pending" class="empty-msg">No pending tasks! Add one.</p>
+        </div>
+
+        <div class="completed-box">
+            <h3 id="completedCount">0 completed</h3>
+            <ul id="completedList"></ul>
+            <p id="empty-completed" class="empty-msg">No tasks completed yet.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
